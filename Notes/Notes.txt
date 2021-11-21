@@ -76,6 +76,12 @@ rm -r
 - (-- version) = shows what version of a software you have // the flag commonly prints out the version of a utility 
 	git --version
 	(shows version)
+- head = shows the 10 lines in there 
+- head -3 = shows the first 3 by default
+- .sh (where we can use it to write commands besides gitbash) 
+	#!user/bin/bash - what to put on file so that it can read on gitbash 
+- .txt (notes where there is text) 
+- variable= (name) after the equal sign is the variable
 Graphical UI (how you do actions by hand) 
 1. find the file in its folder 
 2. right click on the file, choose an option 
