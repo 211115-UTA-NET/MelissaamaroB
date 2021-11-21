@@ -105,3 +105,130 @@ ls ./foldername/text.txt
 
 git clone- creates and initializes a copy of a remote repo to a local location 
 
+
+Hack Rank :
+for Loops 
+// Loop 1-50 (range style for loop) 
+CODE:
+for x in (1..50)         // the variable x inside (1-50) (..) = change number 
+do                       // opens the command funtion on what we will do 
+	echo $x                  // echo write's a string for the variable on a file   
+done 			// closes out the function 
+
+Skipping Loops
+for Loops in shell
+//1-99 , get odd 
+CODE:
+for i in (1..99..2) // 2 is how much it is incrimenting per number, making it odd 
+do 
+	echo $i
+done 
+
+for loops in C# CODE:
+for ((i=1; i<100; i+=2)      // i is the variable and it letting C# know that it will start with 1 and will be less than 100 numbers, and we add 
+				2 to each number. 
+do 
+echo $i
+done 
+
+Comparing Variables 
+// Two variable X & Y, compare the two with >,<,=
+CODE 1:
+read = x
+read = y
+if (( $x < $y ))              	 	//comparing the two values 
+then
+	echo "x is less then y"
+elif (( $x > $y )) 			// if-else: continue on; testing a second condition 
+then 
+	echo "x is greater than y"
+else 					// to catch the last string; if both are false then this last one is true 
+	echo "x is equal to y" 
+fi 
+Diff. Commands for comparing for Bash 
+	-le (less than < or equal to) 
+	- ge (greater than > or equal to)
+CODE 2:
+read x
+read y
+
+if [ $x -ge $y ]
+then
+    echo "X is greater than Y"
+fi
+
+if [ $x = $y ]
+then 
+    echo "X is equal to Y"
+fi
+
+if [ $x -le $y ]
+then 
+    echo "X is less than Y"
+fi
+ 
+
+Conditionals
+if (( $x == Y )) || (( $x == y))
+then
+	echo ""
+elif (( $x == N )) || (( $x == n ))
+then
+echo 
+
+|| - or statement 
+
+The flow of a loop/ setup: Comparing 
+start -> read input -> if y or n -> (2 options: y // n) -> y = echo yes & n = echo no 
+
+	read options 
+
+Conditionals - if/else-f /else 
+start -> read value -> action -> check condition -> exit 
+			(if not met)<-		(if met)
+Conditionals - if/else-if /else 
+- if = testing if a comparison is true or not 
+- else-if (elif) = testing if a second comparison is true 
+- else = If all else fails, do this 
+
+== - is it equal to b (equal sign) 
+	if [ a == b ]; then
+	do this stuff
+	fi 
+> or < - if greater than or less than 
+>= or <= - '' or euqual to 
+!= - if a is not equal to b 
+	if [a !=b ]; then
+	do this stuff
+	fi 
+
+|| - logical or 
+- only one of the statements needs to be true to be true 
+- A boolean (two options) 
+1= true/yes/on
+2= false/no/off 
+0 || 0 = 0
+1 || 0 = 1
+0 || 1 = 1
+1 || 1 = 1
+
+&& - logical and 
+- between two things, both must be true to say be true 
+0 && 0 = 0
+1 && 0 = 0 
+0 && 1 = 0
+1 && 1 = 1
+
+4/2=2
+3/2=1.5
+modules operator- to help with counting etc 
+% - return only the remainder = only whole numbers, no decimals 
+- ex.
+3/2 = 1.5 (% of 1) 
+
+
+an isolated comaprison needs a double bracket, especially when doing an if statement. 
+newar = null
+
+
+

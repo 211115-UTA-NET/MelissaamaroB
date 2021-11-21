@@ -1,0 +1,15 @@
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\bin\Debug\net6.0\Myfirstdotnet.exe
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\bin\Debug\net6.0\Myfirstdotnet.deps.json
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\bin\Debug\net6.0\Myfirstdotnet.runtimeconfig.json
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\bin\Debug\net6.0\Myfirstdotnet.dll
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\bin\Debug\net6.0\ref\Myfirstdotnet.dll
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\bin\Debug\net6.0\Myfirstdotnet.pdb
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\Myfirstdotnet.csproj.AssemblyReference.cache
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\Myfirstdotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\Myfirstdotnet.AssemblyInfoInputs.cache
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\Myfirstdotnet.AssemblyInfo.cs
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\Myfirstdotnet.csproj.CoreCompileInputs.cache
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\Myfirstdotnet.dll
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\ref\Myfirstdotnet.dll
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\Myfirstdotnet.pdb
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\Myfirstdotnet.genruntimeconfig.cache

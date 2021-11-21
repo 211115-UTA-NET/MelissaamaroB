@@ -1,0 +1,5 @@
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\testproject.csproj.AssemblyReference.cache
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\testproject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\testproject.AssemblyInfoInputs.cache
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\testproject.AssemblyInfo.cs
+C:\Users\amaro\exercise\Dotnet\Myfirstdotnet\obj\Debug\net6.0\testproject.csproj.CoreCompileInputs.cache
