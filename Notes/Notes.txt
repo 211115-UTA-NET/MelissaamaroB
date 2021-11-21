@@ -1,0 +1,101 @@
+Day 1 
+Desentrilized vs Centralized
+
+Centralized
+Main- SorT (source of truth) 
+
+
+If there are more people working on somethings, they will all have to send their codes to the Main/ SorT
+to keep the Main updated 
+- ex. Once you send your code to the SorT then the SorT has to send the updated version to all other people.
+	They would have to pull the updated version then continue to work then send their update to SorT
+	which will continue the cycle of sending the updated version from one person to the whole group 
+- Basically going back and forth w/ the SorT 
+- Each person can only take to the SorT, not able to talk to each other
+-Sending code to one place, if something goes wrong, everythig is lost 
+
+De-centralized VCS (version control)
+- Can talk to one person or to all
+- If you don't have access to the latest/updated code 
+- Everyone has a copy of the full set of code, even if one copy is bad, someone else has the copy that is fine
+- You can code w/o the update
+- Git is a de-centralized vcs (version control system) 
+
+GitBAsh
+The top amaro@LAPTOP-J82NR8BR (name of computer)
+MINGW64- what we are working on
+siggly line - it is where your home directory will be 
+- your starting ponit/ homedirectory 
+- HOME 
+
+Shorthands 
+
+Pushing the up arrow copies and paste it to the new line :)
+By hitting tsb it can autofill
+pwd - current working directory 
+usually - /c/users/Melissaamaro
+cd .. - this will change the directory to the parent directory 
+- ex. /c/users 
+cd . - start here 
+- period is a shorthand to say go there to the file you place ( cd./Melissaamaro)
+ls - list the contents in the folder 
+ls -a - this shows hidden folders. If it is a repository it will have .git/
+to change directory 
+cd ./Downloads 
+cd ~ - goes to main 
+mkdir - make directory/makes a folder inside the main directory (Melissaamaro)
+touch - makes a new file (has to add an extension) ex. example.txt 
+rm - this deltes the file in the folder we are in 
+- ex. rm example.txt 
+- after inputting, gitbash will not show if it occured or not so just to make sure do (ls) to see if it is no longer there 
+- can only delete files 
+rm -r 
+- (-r) is considered a flag, so now there is a command and a falg with a target 
+- r flag is recursise, deleting everything in that location and the location itself 
+- this will delete a directory 
+- you can delte a folder and file from a different directory ( ex. rm -r ../namefolder/text.md) this will delte the file in that folder 
+- -r is not needed when deleting a single file 
+- rm -r(-i) confirms the command b4 executing 
+- Command explorer - opens folder 
+- Explore - open a file explorer to the target location 
+- cat = reads what os inside a file 
+-clear = clears the screen, still in the folr you were working on
+-start = Open a file from a folder on git
+- echo "Hello"  = with "" shows bash that it is all one thing, in a string
+- echo "" > test.tex = (>) tells to print the echo into this file 
+- > = will overwrite whatever is in that file with what you wrote
+	ex. echo "hello" > test.txt 
+	Hello 
+- >> = will append, or move to the end of the file, so adding lines to the file instead of overwriting it 
+	ex. echo "hello again" >> test.txt 
+	Hello
+	Hello again
+- which - help us learn if we have something installed//print the location of the exectuable// prints $PATH
+	which git 
+	/mingw64/bin/git (shows where it is) 
+- (-- version) = shows what version of a software you have // the flag commonly prints out the version of a utility 
+	git --version
+	(shows version)
+Graphical UI (how you do actions by hand) 
+1. find the file in its folder 
+2. right click on the file, choose an option 
+Command Line (how you do things in code) 
+1. actions
+2. options
+3. target \
+- action (delete (rm) options (-r) target (directory) 
+
+--help
+cd [L...][direc] (shows you the falgs and where it is going 
+
+Repository 
+git clone "link"
+- only need to clone once to get that reposiroty, after that you can pull/copy things by just going to the repositoy folder and gitpull 
+
+- you can add a file into a folder when inside another folder 
+
+- can also list whats in another folder while in another folder 
+ls ./foldername/text.txt
+
+git clone- creates and initializes a copy of a remote repo to a local location 
+
