@@ -231,4 +231,164 @@ an isolated comaprison needs a double bracket, especially when doing an if state
 newar = null
 
 
+chmod - allows us to change the permissions of the files depending on owner, group, or other
+	- owner should have all permissions; the group should jsut be able to execute it 
+-, +, = remove permissions by adding a (-), add permissions w/ (+)  ot (=) which overrides 
+ls -l = this shows the files and what type of permissions you have on them (rw, r, xr, drwxr) 
+If the file starts with a (- ) it means it is any type of file but if it stats w/ (d) it is a directory file
+ex. changing the permisions to only be readeable, atm it is readable and can be written in
+The permissions in the file reads as first the user's permissions then groups members then others. ex. (-rw-r--r--)
+r-read //1
+w-write //2
+x-execute //4
+d-directory 
+- = files 
+CODE: 
+ls -l	
+drwxr-xr-x
+-rwxr-xr-x			// read the permissions of files
+-rw-r--r--			// the permissions of a file (
+chmod 000 permissions.txt    // the command to change permission to only readable; takes permissions away
+
+grep = to check if there's a certain word in your file; to look for a certain file 
+EX CODE: 
+if grep -q "medicine"  ./bashhistory;
+then
+	echo "I see medicine in your history"
+else
+	echo "you are a liar"
+fi
+
+sed = stream editor; finds the word you are searching and replaces it with something else  
+EX CODE:
+$sed 's/old-text/new-text/g' <filename.txt>  // 's (for sed) then the old word, then new word, 
+						then if you want add g (this is to indicate you will replace it in the entire doc.) then file name
+touch helloworld.txt
+echo "hello world" > helloworld.txt
+echo "world is pretty, world world" >> helloworld.txt
+cat helloworld.tx 
+hellos world 
+world is pretty, world world
+sed 's/world/cat/g' helloworld.txt
+cat helloworld.txt
+hello cat
+cat is pretty, cat cat 
+
+Standard error STD
+- what bash uses to give feedback to the user 
+STD out (1) & STD error (2)
+STD out - what the function puts out
+STD error - is the error message shown when a function is not working properly; sum wrong 
+- trap is also another command for this 
+- find "does not exist" 2> find.error.txt 		// sent this message to the file 
+- you can surpress messages (2>&-) 			// hides error messages 
+
+x= 'find "does not exist" 2>&1'
+echo $x >> find.error.txt 		//storing results from output in the command ('find "does not exist" 2>&1'), 
+					in the event that it is an error it will go to ST error but if it is success it 
+
+
+Variable types: 
+EX CODE 1: 
+a=10
+declare -r b=10			// declare (this variable can only read this value) 
+echo "variable a is $a"
+echo "variable b is $b"
+
+a=57
+b=57
+echo "variable a is $a"
+echo "variable bis $b" 
+
+variable a is 10
+variable b is 10
+variale a is 57
+variable b is 10 		// since b was declared read only the first input then the second input is discarded 
+
+EX CODE 2:
+declare -i a=2 // the int. var. cannot change in the equations when using (-i)
+declare -i b=3
+declare -i c=0
+c=$ (( a + b ))
+echo "$a + $b = $c
+5
+
+EX CODE 3:
+declare -i d =z
+decalre -i e = Thisisalongstring
+echo $d
+echo $e
+- output : 00 (since it was called an intger value they placed a value of 0 on the letters) 
+EXCODE 4:
+decalre -l name=MElissa			// -l (lowercases the string)
+echo $name 
+declare -u name2=MElissa		// -u (upercases the string) 
+echo $name2 
+
+Read a file to output: sum diff. than cat 
+EX CODE: 
+for loop version of doing it 
+
+input= ./myfolder/newfile.txt
+while IFS = read -r line		//IFS - tells the computer to leave in all white space; (-r) if there is a backslash anywhere in the file where it
+					tells the computer to stop its command, the (-r) command ignores the backlash and contiues reading 
+do 
+echo $line
+done < $input 
+
+output = echo cat -t ./myfolder/newfile.txt
+echo $output 
+
+How systems work 
+Interpreted: 
+code------> bash shell (interpreter) (code runs) (convert to native instructions)  //Bash shell
+
+    (convert to native instructions) 
+
+Traditional Compiled:
+source code --------------> build output/executable ------> Operating System (code runs)  // compiler can rewrite ur source code (usually dif. lang.) 
+		compiler
+	 compilation build-time						runtime 
+
+Compiled for a VM 
+source code --------> build output/bytecode/assembly------> VM runtime ------> OS (code runs) // Like C# or Java 
+	    compiler 
+	   Build-time							runtime
+- By installing SDK you get both the compiler and VM runtime (software dev. kit) 
+
+.NET
+you can go to bash and put (donet) and see your functions run 
+--help || -h = this will show you key commands to use in dotnet 
+- to make a new .net project use command 'new'
+- dotnet new console 
+- ( du -h) = disk usage of the server; how much storage is in there 
+- 
+
+
+- first you need a directory to go into 
+CODE COMMANDS C#:
+mkdir MyFirstDotnet 	// makes directory
+cd MyFirstDotnet 	// go into that directory
+dotnet new console 	// make a new dotnet project 
+dotnet build   		 //this will compile; be in the right folder when doing so 
+dotnet ./bin/Debug/net6.0/MyFirstDotnet.dll	// runs 
+dotnet build 			// once you start editing you have to build again; everytime you edit you have to do this command (over and over, not just once) 
+dotnet run // it will build and run; instead of doing dotnet build + dotnet ./bin/Debug/net6.0/MyFirstDotnet.dll
+
+Data Types:
+
+Primitive data types 
+int : all whole numbers from -2,147,483,648 to 2,147,483,647
+char : unicode character (signed 32-bit integer) (can be converted into a single character) (UTF - 16) //16 bit character/value that can be converted into a single character
+short : whole number from -32,768 to 32,767 (signed 16-bit integer) 
+float : real numbers from +-1.5x10^-45 to +-3.4x10^38 (4-bytes) 
+bool : logical true or false, yes or no, on or off (1 - bit to use, allocation slightly more)
+byte : positive whole numbers from 0 to 255 (unsigned 8-bit integer)- no negative #'s 
+double : all real numbers from  ±5.0 × 10^−324 to ±1.7 × 10^308 Low precision  
+long : whole numbers from teeny-tiny to gigantic-massive ( 64-bit signed integer)
+
+int foo = 10;
+foo is an object of type int 
+string NewString = "Hi"  // Newstring is an object type string 
+
 
